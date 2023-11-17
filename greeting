@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Greetings</title>
+</head>
+<body>
+
+    <h1>Welcome to the Greeting Web App!</h1>
+
+   Enter your name:
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <br>
+    <button onclick="showGreeting()">Submit</button>
+
+    <p id="greeting"></p>
+
+    <script>
+        function showGreeting() {
+            var name = document.getElementById('nameInput').value;
+            var greeting = "Hello, " + name + "! Welcome to our web app!";
+            document.getElementById('greeting').innerText = greeting;
+        }
+    </script>
+
+</body>
+</html>
